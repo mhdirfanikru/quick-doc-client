@@ -13,7 +13,7 @@ const HandlePay = () => {
   let userData = jwtDecode(token);
   
 
-  const handlePayment = async (e) => {
+  let handlePayment = async (e) => {
     e.preventDefault();
     try {
       const result = await axios.post(
